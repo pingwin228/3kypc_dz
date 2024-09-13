@@ -3,8 +3,8 @@ function sortProducts(order) {
     const products = Array.from(productsContainer.getElementsByClassName('product'));
 
     products.sort((a, b) => {
-        const priceA = parseInt(a.getAttribute('data-price'));
-        const priceB = parseInt(b.getAttribute('data-price'));
+        const priceA = parseInt(a.getAttribute('data-price') );
+        const priceB = parseInt(b.getAttribute('data-price') );
 
         if (order === 'asc') {
             return priceA - priceB;
@@ -29,3 +29,4 @@ function filterCategory(category) {
         }
     });
 }
+
