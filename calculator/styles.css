@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0) ;
+  }
+  
+  .calculator {
+    margin-left: 250px;
+    width: 300px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3bfc85b4
+  }
+  
+  #display {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    margin-bottom: 20px;
+    color: #ffffffbb;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #312f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #f4f4f4;
+  }
+  
+  button:hover {
+    background-color: #dba93c;
+  }
+
+  button.minus{
+    background-color: #eea92a;
+  }
+  button.umnoj{
+    background-color: #eea92a;
+  }
+  button.plus{
+    background-color: #eea92a;
+  }
+  button.ravno{
+    background-color: #eea92a;
+  }
+
+  button.Clear{
+    background-color: #747171;
+  }
+  button.delet{
+    background-color: #747171;
+  }
+  button.deleNUe{
+    background-color: #747171;
+  }
+
+  .video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+  
