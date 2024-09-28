@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Криптовалюты</h2>
+            <ul id="crypto-list">
+                <li><button class="crypto-button" data-symbol="BTC">Bitcoin (BTC) - $<span id="btc-price">65443</span></button></li>
+                <li><button class="crypto-button" data-symbol="ETH">Ethereum (ETH) - $<span id="eth-price">2648</span></button></li>
+                <li><button class="crypto-button" data-symbol="LTC">Litecoin (LTC) - $<span id="ltc-price">69</span></button></li>
+                <li><button class="crypto-button" data-symbol="HMSTR">Hamster (HMSTR) - $<span id="hmstr-price">1</span></button></li>
+            </ul>
+            <ul>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Криптовалютный симулятор</h1>
+            <canvas id="crypto-chart-btc" class="crypto-chart" width="400" height="200" style="display: none;"></canvas>
+            <canvas id="crypto-chart-eth" class="crypto-chart" width="400" height="200" style="display: none;"></canvas>
+            <canvas id="crypto-chart-ltc" class="crypto-chart" width="400" height="200" style="display: none;"></canvas>
+            <canvas id="crypto-chart-hmstr" class="crypto-chart" width="400" height="200" style="display: none;"></canvas>
+            <div class="balance">
+                <p>Токены: <span id="token-balance">0</span></p>
+                <p>Баланс в долларах: <span id="dollar-balance">1000</span>$</p>
+                <button id="buy-token">Купить токены</button>
+                <button id="sell-token">Продать токены</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

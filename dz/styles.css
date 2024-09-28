@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #444;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.crypto-chart {
+    background-color: #2e2e2e;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.balance {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.balance p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.balance button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.balance button:hover {
+    background-color: #555;
+}
+
+.profile-info {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
